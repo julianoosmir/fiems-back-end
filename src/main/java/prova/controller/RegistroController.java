@@ -7,6 +7,7 @@ import jakarta.ws.rs.POST;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
+import prova.dto.ResgistroDTO;
 import prova.entities.Registro;
 import prova.service.RegistroService;
 
@@ -21,9 +22,10 @@ public class RegistroController {
     @GET
     @RolesAllowed("admin")
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Registro> listar() {
-        return registroService.listar();
+    public List<ResgistroDTO> listar() {
+        return registroService.listarDTO();
     }
+
     @POST
     @Produces(MediaType.APPLICATION_JSON)
     public void registrar(Registro registro) {

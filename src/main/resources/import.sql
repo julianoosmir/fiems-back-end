@@ -14,5 +14,5 @@ insert into especializacao(nome) values ('professor');
 insert into especializacao(nome) values ('técnico');
 insert into especializacao(nome) values ('engenheiro');
 
-insert into registro(nome, cpf, email, telefone, especializacao_id, casa_id)
-values ('joão silva Gonçalves', '00000000000','joão.goncalves@ms.fiems.br','67995857545',3,1);
+insert into registro(nome, cpf, email, telefone, especializacao_id, casa_id,data)
+values ('joão silva Gonçalves', '00000000000','joão.goncalves@ms.fiems.br','67995857545',3,1,'2024-07-10');

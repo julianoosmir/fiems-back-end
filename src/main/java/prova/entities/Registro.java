@@ -2,6 +2,8 @@ package prova.entities;
 
 import jakarta.persistence.*;
 
+import java.time.LocalDate;
+
 
 @Entity
 public class Registro {
@@ -13,6 +15,7 @@ public class Registro {
     private String cpf;
     private String email;
     private String telefone;
+    private LocalDate data;
 
     @ManyToOne
     private Especializacao especializacao;
@@ -86,5 +89,13 @@ public class Registro {
 
     public Long getId() {
         return id;
+    }
+
+    public LocalDate getData() {
+        return data;
+    }
+
+    public void setData(LocalDate data) {
+        this.data = data;
     }
 }
